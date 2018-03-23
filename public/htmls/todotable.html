@@ -1,0 +1,21 @@
+
+    <h1>Home Management</h1>
+     <table class="table">
+      <thead>
+        <tr>
+          <th>description</th>
+          <th>date</th>
+          <th>name</th>
+          <th>&nbsp;</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="d in data track by $index">
+          <td>{{d.description}}</td>
+          <td>{{d.date}}</td>
+          <td>{{d.famileMember}}</td>
+          <td><button class="btn btn-danger" ng-click="remove(d.id,$index)">Remove</button></td>        
+        </tr>
+      </tbody>
+    </table>
+   </div>
